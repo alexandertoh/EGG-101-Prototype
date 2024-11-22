@@ -7,10 +7,10 @@ public class Main {
         boolean running = true;
 
         // Welcome Message
-        System.out.println("Time Manager v0.1\nFrontend Developers: Choushi I., Cody L., Matt K.\nBackend Developer: Alexander O.\n\n---\n");
+        System.out.println("Team Track Prototype\nFrontend Developers: Choushi I., Cody L., Matt K.\nBackend Developer: Alexander O.\n\n---\n");
 
         while (running) {
-            System.out.println("Main Menu\n[1] Make New Task\n[2] View Tasks\n[3] Exit");
+            System.out.println("\n\nMain Menu\n[1] Make New Task\n[2] View Tasks\n[3] Test Task\n[4] ... \n[5] Exit");
 
             int menuSelection = scanner.nextInt();
             scanner.nextLine(); 
@@ -35,7 +35,21 @@ public class Main {
                 System.out.println("Press Enter to continue...");
                 scanner.nextLine();
 
-            } else if (menuSelection == 3) { // Closes software
+            } else if(menuSelection == 3) { // Test Task 
+                System.out.println("\n\nTest Case: User Jane Doe has to complete the updated Bill of Materials in her EGG 101 class, due at 11:59 PM on 11/14/24. Please note that this is an overview of the information, as the functionality hasn't been tested yet.\nInputting the following information:\n\nTask Name: Update Bill of Materials\nDescription: Annotate over last week's assignment and update the tech stack for the assignment.\nDue Date: 11:59:00 PM on 11/14/24\nUsers: Jane Doe, John Doe, Joe Rogan\nID: 1");
+        
+                // Test Case Variables
+                String testName = "Update Bill of Materials";
+                String testDescription = "Annotate over last week's assignment and update the tech stack for the assignment.";
+                String[] testUsers = {"Jane Doe", "John Doe", "Joe Rogan"};
+                String testDate = "11:59:00 PM on 11/21/24";
+                int testID = 1;
+                Task testTask = new Task(testName, testDescription, testDate, testUsers, testID);
+                System.out.println("\nMethod Output: \n" + testTask.returnInfo());
+                System.out.println("Press Enter to continue...");
+                scanner.nextLine();
+            }
+            else if (menuSelection == 5) { // Closes software
                 running = false;
             } else { // Invalid Selection
                 System.out.println("Invalid Selection. Please try again.");

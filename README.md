@@ -1,5 +1,8 @@
 # EGG 101 Prototype
-Programmed by Alexander Oh with Copilot assistance
+Programmed by Alex O. with [Copilot Assistance](#how-i-used-copilot)
+
+[Frontend Site link](https://www.figma.com/design/SFButfkHbmE714y0CCWZAK/Untitled?node-id=0-1&node-type=canvas&t=4cAiWz7AXbV6aY5v-0)
+Frontend Designed & Created by Cody L., Choushi I., and Matt K. 
 
 ## How I used Copilot
 - Bug Fixes
